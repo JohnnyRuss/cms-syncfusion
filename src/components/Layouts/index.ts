@@ -6,3 +6,4 @@ export { default as Chat } from "./Chat/Chat";
 export { default as Notification } from "./Notification/Notification";
 export { default as SuspenseContainer } from "./SuspenseContainer/SuspenseContainer";
 export { default as Header } from "./Header/Header";
+export { default as Spinner } from "./Spinner/Spinner";

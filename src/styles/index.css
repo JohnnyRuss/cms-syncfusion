@@ -14,3 +14,7 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+body:has(.scroll-block) {
+  overflow: hidden;
+}

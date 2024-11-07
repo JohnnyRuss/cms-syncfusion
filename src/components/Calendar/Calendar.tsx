@@ -15,18 +15,18 @@ import { scheduleData } from "@/data/dummy";
 import { Header } from "@/components/Layouts";
 
 const Calendar: React.FC = () => {
-  const onActionComplete = async (args: any) => {
-    if (args.requestType === "eventCreate") {
-      const newEvent = args.data[0];
-      // POST new event to API
-      console.log(newEvent);
-    } else if (args.requestType === "eventChanged") {
-      const updatedEvent = args.data;
-      console.log(updatedEvent);
-    } else if (args.requestType === "eventRemoved") {
-      const deletedEvent = args.data[0];
-      console.log(deletedEvent);
-    }
+  const onActionComplete = async () => {
+    // if (args.requestType === "eventCreate") {
+    //   const newEvent = args.data[0];
+    //   // POST new event to API
+    //   console.log(newEvent);
+    // } else if (args.requestType === "eventChanged") {
+    //   const updatedEvent = args.data;
+    //   console.log(updatedEvent);
+    // } else if (args.requestType === "eventRemoved") {
+    //   const deletedEvent = args.data[0];
+    //   console.log(deletedEvent);
+    // }
   };
 
   return (

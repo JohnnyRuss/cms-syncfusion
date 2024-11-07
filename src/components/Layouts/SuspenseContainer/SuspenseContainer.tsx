@@ -1,21 +1,12 @@
 import { Suspense } from "react";
+import { Spinner } from "@/components/Layouts";
 
 type SuspenseContainerT = {
   children: React.ReactNode;
 };
 
 const SuspenseContainer: React.FC<SuspenseContainerT> = ({ children }) => {
-  return (
-    <Suspense
-      fallback={
-        <div className="text-gray-700 bg-blue-500 absolute inset-0 flex justify-center items-center">
-          Loading
-        </div>
-      }
-    >
-      {children}
-    </Suspense>
-  );
+  return <Suspense fallback={<Spinner />}>{children}</Suspense>;
 };
 
 export default SuspenseContainer;
