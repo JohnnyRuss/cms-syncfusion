@@ -1,0 +1,66 @@
+/* Works with individual rewrites */
+.e-float-input:not(.e-input-group) span.e-float-line::after,
+.e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::after,
+.e-float-input:not(.e-input-group) span.e-float-line::before,
+.e-float-input.e-control-wrapper:not(.e-input-group) .e-float-line::before {
+  background: var(--theme-color) !important;
+}
+
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::after,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+  .e-float-line::after,
+.e-float-input.e-input-group:not(.e-float-icon-left) .e-float-line::before,
+.e-float-input.e-control-wrapper.e-input-group:not(.e-float-icon-left)
+  .e-float-line::before {
+  background: var(--theme-color) !important;
+}
+
+.e-radio:checked + label::after {
+  background: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+.e-radio:checked + label::before {
+  border-color: var(--theme-color) !important;
+}
+
+/* Works with global rewrite */
+.e-content td.e-selected:hover span.e-day,
+.e-calendar .e-content td.e-selected.e-focused-date span.e-day,
+.e-quick-popup-wrapper .e-event-popup .e-popup-header,
+.e-schedule .e-vertical-view .e-day-wrapper .e-appointment,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::after,
+.e-input-group:not(.e-float-icon-left):not(.e-float-input)::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::before,
+.e-input-group.e-control-wrapper:not(.e-float-icon-left):not(
+    .e-float-input
+  )::after,
+.e-checkbox-wrapper .e-frame.e-check,
+.e-css.e-checkbox-wrapper .e-frame.e-check,
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+  background: var(--theme-color) !important;
+}
+
+.e-float-input.e-control-wrapper:not(.e-error).e-input-focus
+  input
+  ~ label.e-float-text,
+.e-datetime-wrapper .e-input-group-icon.e-icons.e-active,
+.e-datetime-wrapper.e-input-group:not(.e-disabled)
+  .e-input-group-icon.e-active:active,
+.e-datetimepicker.e-popup .e-list-parent.e-ul .e-list-item.e-active,
+.e-dropdownbase .e-list-item.e-active,
+.e-float-input:not(.e-error) input:focus ~ label.e-float-text,
+.e-schedule .e-schedule-toolbar .e-active-view .e-tbar-btn-text {
+  color: var(--theme-color) !important;
+}
+
+.e-btn.e-flat.e-primary,
+.e-css.e-btn.e-flat.e-primary,
+.e-btn.e-flat.e-primary:focus,
+.e-css.e-btn.e-flat.e-primary:focus {
+  background-color: rgba(var(--theme-color-rgb), 0.12);
+  border-color: transparent;
+  color: var(--theme-color);
+}
